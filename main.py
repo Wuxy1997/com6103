@@ -12,8 +12,8 @@ embedder = SentenceTransformer('all-MiniLM-L6-v2')
 # 假设这里是关于HSUHK的信息文档列表
 hsuhk_docs = [
     "hsuhk is the short name for the hang seng university of hong kong",
-    "商业管理学院提供会计学、金融学等专业课程。",
-    "HSUHK注重实践教学，与多家企业有合作。"
+    "hsuhk have computer science, math, chinese schools",
+    "HSUHK coordinated with multiple companies like tencent, netease"
 ]
 # 对文档进行编码
 doc_embeddings = embedder.encode(hsuhk_docs, convert_to_tensor=True)
